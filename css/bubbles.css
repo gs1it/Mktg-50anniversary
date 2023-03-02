@@ -1,0 +1,228 @@
+.wrapper-carousel-bubbles .slick-track {
+    display: flex
+}
+
+.carousel-body {
+    padding-top: calc(.9857142857rem + .6857142857vw)
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons .line-fade {
+    display: none
+}
+
+.carousel-bubbles .wrapper {
+    margin-right: 16px;
+    height: 104px
+}
+
+.carousel-bubbles .wrapper img {
+    border-radius: 100%;
+    width: 104px;
+    height: 104px;
+    -o-object-fit: cover;
+    object-fit: cover
+}
+
+.carousel-bubbles .wrapper.slick-current {
+    -webkit-animation: 1s linear both w;
+    animation: 1s linear both w
+}
+
+.carousel-bubbles .wrapper.slick-current+.wrapper,
+.carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper {
+    width: 50px !important
+}
+
+.carousel-bubbles .wrapper.slick-current+.wrapper img,
+.carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper img {
+    width: 50px;
+    height: 50px
+}
+
+.carousel-body .wrapper-body {
+    align-items: flex-start !important
+}
+
+.wrapper-carousel-bubbles {
+    margin-left: 40px;
+    max-width: 250px;
+    width: 100%
+}
+
+@media screen and (min-width:768px) {
+    .carousel-bubbles .wrapper {
+        margin-right: 24px;
+        height: 218px
+    }
+
+    .carousel-bubbles .wrapper img {
+        width: 218px;
+        height: 218px
+    }
+
+    .carousel-bubbles .wrapper.slick-current+.wrapper,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper+.wrapper {
+        width: 68px !important
+    }
+
+    .carousel-bubbles .wrapper.slick-current+.wrapper img,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper img,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper img,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper+.wrapper img {
+        width: 68px;
+        height: 68px
+    }
+
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper {
+        width: 48px !important
+    }
+
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper img,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper img,
+    .carousel-bubbles .wrapper.slick-current+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper+.wrapper img {
+        width: 48px;
+        height: 48px
+    }
+
+    .wrapper-carousel-bubbles {
+        margin-left: 65px;
+        max-width: 810px
+    }
+
+    .wrapper-carousel-bubbles .wrapper-buttons::before {
+        top: 105px !important;
+        left: -65px;
+        width: calc(100% + 130px)
+    }
+
+    .wrapper-carousel-bubbles .wrapper-buttons button.slick-arrow {
+        top: 90px !important
+    }
+
+    .wrapper-carousel-bubbles .wrapper-buttons .slick-next {
+        right: -65px
+    }
+
+    .wrapper-carousel-bubbles .wrapper-buttons .slick-prev {
+        left: -65px
+    }
+}
+
+.wrapper-carousel-bubbles .slick-track .slick-slide {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.wrapper-carousel-bubbles .disable {
+    cursor: not-allowed;
+    opacity: .7
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons.finish .line-fade {
+    display: block;
+    position: absolute;
+    height: 2px;
+    width: 100%;
+    right: 0;
+    top: 105px;
+    background: linear-gradient(90deg, transparent 30%, #fff 100%);
+    z-index: 0
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons.finish:before {
+    width: 300px !important
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons.finish:after {
+    content: "";
+    width: calc(100% - 40px);
+    height: 2px;
+    background-color: transparent;
+    display: block;
+    position: absolute;
+    top: 105px;
+    z-index: -1;
+    left: -25px;
+    border: 1px dashed #c4d7ed
+}
+
+@media screen and (max-width:767px) {
+    .wrapper-carousel-bubbles .wrapper-buttons.finish .line-fade {
+        background: linear-gradient(90deg, transparent 80%, #fff 100%);
+        top: 55px
+    }
+
+    .wrapper-carousel-bubbles .wrapper-buttons.finish:before {
+        width: 150px !important
+    }
+
+    .wrapper-carousel-bubbles .wrapper-buttons.finish:after {
+        width: 100%;
+        top: 55px;
+        left: 0
+    }
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons::before {
+    content: "";
+    width: calc(100% + 50px);
+    height: 2px;
+    background-color: #c4d7ed;
+    display: block;
+    position: absolute;
+    top: 55px;
+    z-index: -1;
+    left: -25px
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons button.slick-arrow {
+    position: absolute;
+    z-index: 3;
+    top: 40px;
+    background: #fff;
+    border: 1px solid #e5f0fc;
+    border-radius: 50%;
+    box-shadow: 0 2px 3px 0 rgba(0, 44, 108, .2);
+    width: 30px;
+    height: 30px;
+    transition: top .2s
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons button.slick-arrow.disable,
+.wrapper-carousel-bubbles .wrapper-buttons button.slick-arrow.slick-disable {
+    opacity: .4
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons .slick-next {
+    right: -35px
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons .slick-prev {
+    left: -45px
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons .slick-next::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M-0.000141144 4.99981C-0.000141144 5.16557 0.0657063 5.32455 0.182917 5.44176C0.300127 5.55897 0.459099 5.62481 0.624859 5.62481H7.86611L5.18236 8.30731C5.12425 8.36542 5.07815 8.43441 5.0467 8.51033C5.01526 8.58626 4.99907 8.66763 4.99907 8.74981C4.99907 8.83199 5.01526 8.91337 5.0467 8.98929C5.07815 9.06522 5.12425 9.1342 5.18236 9.19231C5.24047 9.25042 5.30945 9.29652 5.38538 9.32797C5.4613 9.35942 5.54268 9.3756 5.62486 9.3756C5.70704 9.3756 5.78841 9.35942 5.86434 9.32797C5.94026 9.29652 6.00925 9.25042 6.06736 9.19231L9.81736 5.44231C9.87556 5.38426 9.92174 5.31529 9.95325 5.23935C9.98476 5.16342 10.001 5.08202 10.001 4.99981C10.001 4.9176 9.98476 4.8362 9.95325 4.76027C9.92174 4.68434 9.87556 4.61537 9.81736 4.55731L6.06736 0.807313C5.95 0.689955 5.79083 0.624023 5.62486 0.624023C5.45889 0.624023 5.29972 0.689955 5.18236 0.807313C5.065 0.924671 4.99907 1.08384 4.99907 1.24981C4.99907 1.41578 5.065 1.57496 5.18236 1.69231L7.86611 4.37481H0.624859C0.459099 4.37481 0.300127 4.44066 0.182917 4.55787C0.0657063 4.67508 -0.000141144 4.83405 -0.000141144 4.99981Z' fill='%23002C6C'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    display: inline-block;
+    height: 10px
+}
+
+.wrapper-carousel-bubbles .wrapper-buttons .slick-prev::after {
+    content: "";
+    background-image: url("data:image/svg+xml,%3Csvg width='10' height='10' viewBox='0 0 10 10' fill='none' xmlns='http://www.w3.org/2000/svg'%3E%3Cpath fill-rule='evenodd' clip-rule='evenodd' d='M10 4.99981C10 4.83405 9.93415 4.67508 9.81694 4.55787C9.69973 4.44066 9.54076 4.37481 9.375 4.37481H2.13375L4.8175 1.69231C4.93486 1.57496 5.00079 1.41578 5.00079 1.24981C5.00079 1.08384 4.93486 0.924671 4.8175 0.807313C4.70014 0.689955 4.54097 0.624023 4.375 0.624023C4.20903 0.624023 4.04986 0.689955 3.9325 0.807313L0.1825 4.55731C0.124296 4.61537 0.0781174 4.68434 0.0466099 4.76027C0.0151014 4.8362 -0.00111675 4.9176 -0.00111675 4.99981C-0.00111675 5.08202 0.0151014 5.16342 0.0466099 5.23935C0.0781174 5.31529 0.124296 5.38426 0.1825 5.44231L3.9325 9.19231C4.04986 9.30967 4.20903 9.3756 4.375 9.3756C4.54097 9.3756 4.70014 9.30967 4.8175 9.19231C4.93486 9.07495 5.00079 8.91578 5.00079 8.74981C5.00079 8.58384 4.93486 8.42467 4.8175 8.30731L2.13375 5.62481H9.375C9.54076 5.62481 9.69973 5.55897 9.81694 5.44176C9.93415 5.32455 10 5.16557 10 4.99981Z' fill='%23A6B0BB'/%3E%3C/svg%3E%0A");
+    background-repeat: no-repeat;
+    background-position: center;
+    width: 10px;
+    display: inline-block;
+    height: 10px
+}
